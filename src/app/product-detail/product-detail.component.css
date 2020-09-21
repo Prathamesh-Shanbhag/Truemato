@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
+
+body {
+  background-color: #d2dbdd;
+  display: flex;
+  display: -webkit-flex;
+  -webkit-justify-content: center;
+  -webkit-align-items: center;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.section-center {
+  width: 85vw;
+  margin: 4rem auto 2rem auto;
+  max-width: 1170px;
+}
+
+.cards {
+  width: 100%;
+  display: flex;
+  justify-content: stretch;
+  -webkit-justify-content: center;
+  height: auto;
+}
+
+.card--1 .card__img,
+.card--1 .card__img--hover {
+  background-image: url("https://b.zmtcdn.com/data/dish_photos/9d5/75c0624fa3b90b742027ddb9723119d5.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A");
+}
+
+.card--2 .card__img,
+.card--2 .card__img--hover {
+  background-image: url("https://b.zmtcdn.com/data/dish_photos/73b/25da89fb370b79f6a58477e932fab73b.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A");
+}
+.card--3 .card__img,
+.card--3 .card__img--hover {
+  background-image: url("https://b.zmtcdn.com/data/dish_photos/0f7/e8337e62d6b5f923d61bd4b104f3c0f7.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A");
+}
+
+.card__like {
+  width: 18px;
+}
+
+.card__img {
+  visibility: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 235px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.card__info-hover {
+  position: absolute;
+  padding: 16px;
+  width: 100%;
+  opacity: 0;
+  top: 0;
+}
+
+.card__img--hover {
+  transition: 0.2s all ease-out;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  position: absolute;
+  height: 235px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  top: 0;
+}
+.card {
+  margin-right: 25px;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
+  background-color: #fff;
+  width: 33.3%;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0px 13px 10px -7px rgba(0, 0, 0, 0.1);
+}
+.card:hover {
+  box-shadow: 0px 30px 18px -8px rgba(0, 0, 0, 0.1);
+  transform: scale(1.1, 1.1);
+}
+
+.card__info {
+  z-index: 2;
+  background-color: #fff;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  padding: 16px 24px 24px 24px;
+}
+
+.card__category {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  color: #868686;
+}
+
+.card__title {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-family: "Roboto Slab", serif;
+}
+
+.card__by {
+  font-size: 12px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+}
+
+.card__author {
+  font-weight: 600;
+  text-decoration: none;
+  color: #ad7d52;
+}
+
+.card:hover .card__img--hover {
+  height: 100%;
+  opacity: 0.3;
+}
+
+.card:hover .card__info {
+  background-color: transparent;
+  position: relative;
+}
+
+.card:hover .card__info-hover {
+  opacity: 1;
+}
+
+.cont {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  display: inline-block;
+}
+.cart {
+  border: 0;
+  background: transparent;
+  padding: 25px;
+  color: var(--primaryCol);
+  width: 7rem;
+  height: 5rem;
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
+  cursor: pointer;
+  overflow: hidden;
+  margin: auto;
+}
+
+.fa {
+  font-size: 16px;
+}
+.cart .fa {
+  font-size: 26px;
+  position: absolute;
+  top: 0;
+  left: -50;
+  padding: 0 5px 0 0;
+}
+.cart_text {
+  font-weight: bolder;
+}

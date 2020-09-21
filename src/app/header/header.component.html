@@ -1,0 +1,49 @@
+<header id="home">
+  <!-- <<<<<<navbar>>>>>> -->
+  <nav class="navbar">
+    <div class="nav-center">
+      <!-- nav header  -->
+      <div class="nav-header">
+        <a href="#home">
+          <img src="assets/logo.png" alt="Truematologo" class="nav-logo" />
+        </a>
+        <button
+          type="button"
+          class="nav-toggle"
+          id="nav-toggle"
+          aria-label="nav-toggler"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+      <!-- end of navbar header  -->
+      <!-- navbar links  -->
+      <div class="nav-links" id="nav-links">
+        <a routerLink="" class="nav-link">Home</a>
+        <a routerLink="/login" class="nav-link">Login</a>
+        <a routerLink="/register" class="nav-link">Sign-Up</a>
+        <a routerLink="/restaurants" class="nav-link">Restaurants</a>
+      </div>
+      <!-- end of nav bar links  -->
+      <!-- nav social  -->
+      <div class="nav-icons">
+        <a href="https://www.facebook.com" target="_blank">
+          <i class="fab fa-facebook nav-icon"></i>
+        </a>
+
+        <a href="https://www.twitter.com" target="_blank">
+          <i class="fab fa-twitter nav-icon"></i>
+        </a>
+
+        <a href="https://www.instagram.com" target="_blank">
+          <i class="fab fa-instagram nav-icon"></i>
+        </a>
+        <a class="nav-link my_cart" routerLink="/cart">MY CART</a>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <input type="text" placeholder="Search..." />
+    <div class="search"></div>
+  </div>
+</header>
